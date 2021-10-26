@@ -2,47 +2,70 @@
 	box-sizing: border-box;
 	font-family: "Myriad-Pro", sans-serif;
 	font-weight: normal;
+
+	
 }
 
 body {
 	padding: 0;
+	padding-top: 100px;
 	margin: 0;
-
+	background-color: rgb(79, 72, 72);
 }
 
-.calculator-grid {
-	display: grid;
 
-	/* Centers calculator grid */
+
+.calculator-container {
+	display: grid;
 	justify-content: center;
 	align-items: content;
-	min-height: 100vh;
+	max-height: 500px;
+	
 
-	/* Setting up grid */
 	grid-template-columns: repeat(4,100px);
-	grid-template-rows: minmax(120px, auto) repeat(5, 100px);
+	grid-template-rows: minmax(120px,auto) repeat(5,100px);
+
+	width: 100%%;
 
 }
 
-/* To properly position buttons, you have to select them */
-.calculator-grid > button {
+.calculator-container > button {
+	
+
 	cursor: pointer;
 	font-size: 2rem;
 	border: 1px solid white;
-	outline: none;
+
+	
 }
 
-.calculator-grid > button:hover {
-	background-color: rgba(255,255,255,.9);
-	}
-
-/* targets elements with span-two class, will make them span 2 grid spaces */
 .span-two {
 	grid-column: span 2;
-
 }
 
-.display {
-	/* the display will now span from column 1 to -1, or all columns */
-	grid-column: 1 / -1;
+.viewing-screen {
+	grid-column: 1/-1;
+	background-color: black;
+	/*background-color: rgb(101,112,129); */
+	height: 100%;
+}
+
+.right-side-operators {
+	background-color: rgb(245,136,44);
+}
+
+
+/* Positions current number in bottom right of viewing-screen  */
+.viewing-screen { position: relative; }
+.current-number {
+	float: right;
+	position: absolute;
+	right: 0px;
+	bottom: 0px;
+
+	padding: 5px;
+	padding-right: 10px;
+	color: white;
+	font-size: 450%;
+
 }

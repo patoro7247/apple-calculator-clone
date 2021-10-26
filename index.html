@@ -1,44 +1,42 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="utf-8">
-	<title></title>
 	<link rel="stylesheet" href="styles.css">
-	<script src="script.js"></script>
-
+	<script type="text/javascript" src="script.js" defer></script>
 </head>
-<body>
-	<p>test</p>
-	<div class="calculator-grid">
-		<div class="display">
-			<div class="first_operand">123+</div>
-			<div class="second_operand">252</div>
-		</div>
-		<button>AC</button>
-		<button>DEL</button>
-		<button>%</button>
-		<button>/</button>
+	<body>
+		
+			<div class = "calculator-container">
+				<div class = "viewing-screen">
+					<div data-current-operand class="current-number">123</div>
 
-		<button>7</button>
-		<button>8</button>
-		<button>9</button>
-		<button>*</button>
+				</div>
+				<button data-clear>C</button>
+				<button data-change-sign>+/-</button>
+				<button data-operation>%</button>
+				<button data-operation class="right-side-operators">/</button>
 
-		<button>4</button>
-		<button>5</button>
-		<button>6</button>
-		<button>-</button>
+				<button data-number >7</button>
+				<button data-number>8</button>
+				<button data-number>9</button>
+				<button data-operation class="right-side-operators">*</button>
 
-		<button>1</button>
-		<button>2</button>
-		<button>3</button>
-		<button>+</button>
+				<button data-number >4</button>
+				<button data-number>5</button>
+				<button data-number>6</button>
+				<button data-operation class="right-side-operators">-</button>
 
-		<button class="span-two">0</button>
-		<button>.</button>
-		<button>=</button>
+				<button data-number>1</button>
+				<button data-number>2</button>
+				<button data-number>3</button>
+				<button data-operation class="right-side-operators">+</button>
 
-	</div>
+				<button data-number class="span-two">0</button>
+				<button data-number>.</button>
+				<button data-equals class="right-side-operators">=</button>
 
-</body>
+
+			</div>
+	</body>
+
 </html>
