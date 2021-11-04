@@ -17,6 +17,9 @@ class Calculator {
 
 	appendNumber(num)
 	{
+		if (this.currentOperand.length > 8) {
+			return;
+		}
 		this.currentOperand += (num).toString()
 		//this.currentOperand = num
 	}
