@@ -1,6 +1,7 @@
 ## Apple Calculator Imitation
 
 This is my rendition of Apple's preinstalled calculator on macOS made with HTML, CSS, and JavaScript
+Performs all basic operations displayed
 
 ## Screenshots
 
